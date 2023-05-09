@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <title>Register</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                margin: 0;
+                padding: 0;
+            }
+
+            #head {
+                background-color: #333;
+                color: #fff;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 50px;
+                padding: 0 20px;
+            }
+
+            #head a {
+                color: #fff;
+                font-size: 16px;
+                margin-right: 20px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            #head a:hover {
+                color: #ffd700;
+            }
+
+            #area {
+                max-width: 500px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: #bebebe;
+                border-radius: 10px;
+            }
+            #area h1 {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+            #area label {
+                display: block;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            #area input[type="text"],
+            #area textarea {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            #area input[type="file"] {
+                margin-bottom: 20px;
+            }
+            #area input[type="submit"] {
+                background-color: #343434;
+                color: #ffffff;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: background-color 0.2s ease;
+            }
+            #area input[type="submit"]:hover {
+                background-color: #595959;
+            }
+            #area textarea {
+                resize: vertical;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="head">
+        </div>
+        <div id="area" >
+            <form action="/register" method="post">
+                <div class="form-group row">
+                    <h1>Register a new account</h1>
+                    <!-- {% with messages = get_flashed_messages(category_filter=['register']) %}   
+                        {% if messages %}                        
+                            {% for message in messages %}          
+                                <p style="color: rgb(0, 0, 0);">{{message}}</p>     
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %} -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="username">Username:</label>
+                        <input type="text" name="username" class="form-control">
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="email">Email:</label>
+                        <input type="email" name="email" class="form-control">
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="password">Password:</label>
+                        <input type="password" name="password" class="form-control">
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="confirmpassword">Confirm Password:</label>
+                        <input type="password" name="confirmpassword" class="form-control">
+                    </div>
+                    <input type="submit" name="" value="Submit" >
+                    <div class="text-center">
+                        <p>Already have an account? <a href="/login">Login</a></p>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <a href="/">Return Home</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+/* Global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+#header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+}
+.username{
+    margin-right: auto;
+}
+#header a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#header a:hover {
+    color: #ffd700;
+}
+
+
+p {
+    margin: 0 0 1rem 0;
+}
+
+input[type="text"],
+textarea {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Layout styles */
+
+#create_project {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+#create_project label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#create_project textarea {
+    resize: none;
+}
+
+#create_project p {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}

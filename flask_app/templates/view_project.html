@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='view_project.css') }}">
+    <title>view Project</title>
+</head>
+<body>
+    <div id="header">
+        <h3 class="username">Welcome {{user.username}}</h3>
+        <a href="/profile_page">Profile</a>
+        <a href="/depot">Depot</a>
+        <a href="/logout">Logout</a>
+    </div>
+    <div>
+        <h3 class="projectname"> Name: {{project.project_name}}</h3>
+        <p class="projectdes">Description: {{project.description}}</p>
+        <p class="likes">Total likes:{{likes}} </p>
+        {% if session.id != project_id %}
+            {% if has_liked == True %}
+                <a class="likelink" href="/unlike/{{project.id}}">unlike</a>
+            {% else %}
+                <a class="likelink" href="/like/{{project.id}}">like</a> 
+            {% endif %}
+        {% endif %}
+    </div>
+    <div>
+        {% for part in parts %}
+        <ul class="partlist">
+            <li class="partname">{{part.part_name}}</li>
+            <li class="part"><a href="{{ url_for('static', filename=part.part) }}" data-toggle="tooltip" title=img src="{{ url_for('static', filename=part.part) }}" alt="{{part.part_name}}">{{part.part}}</a></li>
+            <li><img class ="partpic"src="{{ url_for('static', filename=part.screenshot) }}" alt="profile pic cant be displayed"></li>
+            <li class="part">{{part.created_at.strftime('%m/%d/%Y')}}</li>
+        </ul>
+        {% endfor %}
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip({
+            html:true
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+}
+
+#header a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+  /* body styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+}
+
+  /* container styles */
+#container {
+    margin: 0 auto;
+}
+
+  /* header styles */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h1 {
+    font-size: 2rem;
+}
+
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+  /* profile info styles */
+#profile_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profilepic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#profile_info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#profile_info p {
+    margin-bottom: 10px;
+    max-width: 600px;
+}
+
+#profile_info a {
+    color: #333;
+    text-decoration: none;
+    border: 2px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#profile_info a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+  /* table styles */
+#users_files {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#users_files th,
+#users_files td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#users_files th {
+    text-align: left;
+    background-color: #eee;
+}
+
+#users_files td {
+    vertical-align: middle;
+}
+
+#users_files a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 5px;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#users_files a:hover {
+    background-color: #333;
+    color: #fff;
+}

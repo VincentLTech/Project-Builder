@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='edit_project.css') }}">
+    <title>Edit Project</title>
+</head>
+<body>
+    <div id="head">
+        <h3>Welcome {{user.username}}</h3>
+        <a href="/profile_page">Profile</a>  
+        <a href="/depot">Depot</a>
+    </div>
+    {% with messages = get_flashed_messages(category_filter=['part']) %}
+        {% if messages %}
+            {% for message in messages %}
+                <p style="color: rgb(255, 0, 0);">{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    <H1>{{project.project_name}}</H1>
+    <p>Project id #{{project.id}}</p>
+    This page will allow the user to upload parts to their project!
+    <form method="post" enctype="multipart/form-data" action="/Upload_part/{{project.id}}">
+        <label for="part_name">Part Name:</label>
+        <input type="text" name="part_name" id="part_name" required>
+        <label for="part">Part File:</label>
+        <input type="file" name="part" id="part_file" accept=".stl" required>
+        <label for="partpic">Picture or screenshot of part:</label>
+        <input type="file" name="screenshot" accept=".png,.jpg">
+        <input type="submit" value="submit">
+    </form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Part Name</th>
+                <th scope="col">File Name</th>
+                <th scope="col">Picture</th>
+                <th scope="col">action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for part in parts %}
+            <tr>
+                <td>{{ part.part_name }}</td>
+                <td>{{ part.part }}</td>
+                <td><img class ="partpic"src="{{ url_for('static', filename=part.screenshot) }}" alt="profile pic cant be displayed"></td>
+                <td><a href="/delete_part/{{part.id}}">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</body>
+</html>

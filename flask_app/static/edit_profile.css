@@ -1,0 +1,145 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+a {
+    color: #0077C0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+
+#head {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+}
+
+#head a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#head a:hover {
+    color: #ffd700;
+}
+
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#profile_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.profilepic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+
+#users_files {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+#users_files th {
+    text-align: left;
+    background-color: #0077C0;
+    color: #fff;
+    padding: 10px;
+}
+
+#users_files td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#users_files td:first-child {
+    font-weight: bold;
+}
+
+#users_files td:last-child {
+    text-align: right;
+}
+
+#users_files a {
+    color: #0077C0;
+    margin-right: 10px;
+}
+
+#users_files a:hover {
+    text-decoration: underline;
+}
+
+  /* Edit Profile Styles */
+#editprofile {
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+#editprofile h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#editprofile label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#editprofile input[type="text"],
+#editprofile textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+#editprofile input[type="file"] {
+    margin-bottom: 20px;
+}
+
+#editprofile input[type="submit"] {
+    background-color: #0077C0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#editprofile input[type="submit"]:hover {
+    background-color: #005C8E;
+}

@@ -1,0 +1,47 @@
+#container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 250px;
+    border: 4px dotted black;
+}
+#header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+}
+
+#header a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#header a:hover {
+    color: #ffd700;
+}
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
