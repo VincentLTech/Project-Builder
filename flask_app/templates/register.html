@@ -90,13 +90,13 @@
             <form action="/register" method="post">
                 <div class="form-group row">
                     <h1>Register a new account</h1>
-                    <!-- {% with messages = get_flashed_messages(category_filter=['register']) %}   
+                    {% with messages = get_flashed_messages(category_filter=['register']) %}   
                         {% if messages %}                        
                             {% for message in messages %}          
                                 <p style="color: rgb(0, 0, 0);">{{message}}</p>     
                             {% endfor %}
                         {% endif %}
-                    {% endwith %} -->
+                    {% endwith %}
                     <div class="form-outline mb-4">
                         <label class="form-label" for="username">Username:</label>
                         <input type="text" name="username" class="form-control">
