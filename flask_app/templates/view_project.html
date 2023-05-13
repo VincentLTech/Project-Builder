@@ -21,13 +21,13 @@
         <h3 class="projectname"> Name: {{project.project_name}}</h3>
         <p class="projectdes">Description: {{project.description}}</p>
         <p class="likes">Total likes:{{likes}} </p>
-        {% if session.id != project_id %}
+        <!-- {% if session.id != project_id %} -->
             {% if has_liked == True %}
                 <a class="likelink" href="/unlike/{{project.id}}">unlike</a>
             {% else %}
                 <a class="likelink" href="/like/{{project.id}}">like</a> 
             {% endif %}
-        {% endif %}
+        <!-- {% endif %} -->
     </div>
     <div>
         {% for part in parts %}
