@@ -2,10 +2,6 @@
 <h1 align="center">
     Project Builder 
 </h1>
-
-![Page Image](/Screenshots/InitialPage.png?raw=true)
-
-### *A Birthday Activity*  
 ___
 
 ## Table of Contents
