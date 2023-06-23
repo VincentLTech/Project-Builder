@@ -30,33 +30,33 @@ ___
 
 * Try Registering for your account for the first time. Or Login if you have already registered
 
-<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot1.jpg" alt="Game One" width="300">  
+<img src="Screenshots\Screenshot1.jpg" alt="Game One" width="300">  
 
 * If this is yout first time registering for your account, add your name email and password.
 
-<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot2.jpg" alt="Game Two" width="300">  
+<img src="Screenshots\Screenshot2.jpg" alt="Game Two" width="300">  
 
 * If this is yout first time registering for your account, add you profile picture, your username and self description.
 
-<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot3.jpg" alt="MostlyComplete" width="300">  
+<img src="Screenshots\Screenshot3.jpg" alt="MostlyComplete" width="300">  
 
-<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot4.jpg" alt="Game won" width="300">  
+<img src="Screenshots\Screenshot4.jpg" alt="Game won" width="300">  
 
 * To get started, click on create a new project.
 
-<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot5.jpg" alt="FinalMessage" width="300">  
+<img src="Screenshots\Screenshot5.jpg" alt="FinalMessage" width="300">  
 
 * Add your project name and description and other information it will ask of your project.
 
-<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot6.jpg" alt="MostlyComplete" width="300">  
+<img src="Screenshots\Screenshot6.jpg" alt="MostlyComplete" width="300">  
 
 * After posting, you will be able to see the projects you deployed in the site.
 
-<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot7.jpg" alt="Game won" width="300">  
+<img src="Screenshots\Screenshot7.jpg" alt="Game won" width="300">  
 
 * And you will be able to see your project in the global depot page where you can see other projects from other users and add a like to them.
 
-<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot8.jpg" alt="FinalMessage" width="300">  
+<img src="Screenshots\Screenshot8.jpg" alt="FinalMessage" width="300">  
 
 
 [Return to Table of Contents](#Table-of-Contents)
