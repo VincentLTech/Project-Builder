@@ -1,15 +1,9 @@
 
 <h1 align="center">
-    Memory Game
+    Project Builder 
 </h1>
 
-<!-- <p align="center">
-    <a href="" alt="Video Tour">Take a Video Tour</a>
-</p> -->
-
 ![Page Image](/Screenshots/InitialPage.png?raw=true)
-
-<!-- [![Video Tour](/Screenshots/Login.png?raw=true)](https://youtu.be/) -->
 
 ### *A Birthday Activity*  
 ___
@@ -32,23 +26,37 @@ It was a solo project that I wanted to create to practice my knowledge in Python
 ___
 
 ## Features
-* Location of images is randomized each time the memory game is started
+* Guide to how the websit works
 
-<img src="https://github.com/Purposefully/MemoryGame/blob/master/Screenshots/GameOne.png?raw=true" alt="Game One" width="300">  
+* Try Registering for your account for the first time. Or Login if you have already registered
 
-<img src="https://github.com/Purposefully/MemoryGame/blob/master/Screenshots/GameTwo.png?raw=true" alt="Game Two" width="300">  
+<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot1.jpg" alt="Game One" width="300">  
 
-* Success pattern shows which squares have already been solved
+* If this is yout first time registering for your account, add your name email and password.
 
-<img src="https://github.com/Purposefully/MemoryGame/blob/master/Screenshots/MostlyComplete.png?raw=true" alt="MostlyComplete" width="300">  
+<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot2.jpg" alt="Game Two" width="300">  
 
-* Success message displays when game has been won
+* If this is yout first time registering for your account, add you profile picture, your username and self description.
 
-<img src="https://github.com/Purposefully/MemoryGame/blob/master/Screenshots/Success.png?raw=true" alt="Game won" width="300">  
+<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot3.jpg" alt="MostlyComplete" width="300">  
 
-* Final birthday message page displays
+<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot4.jpg" alt="Game won" width="300">  
 
-<img src="https://github.com/Purposefully/MemoryGame/blob/master/Screenshots/FinalMessage.png?raw=true" alt="FinalMessage" width="300">  
+* To get started, click on create a new project.
+
+<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot5.jpg" alt="FinalMessage" width="300">  
+
+* Add your project name and description and other information it will ask of your project.
+
+<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot6.jpg" alt="MostlyComplete" width="300">  
+
+* After posting, you will be able to see the projects you deployed in the site.
+
+<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot7.jpg" alt="Game won" width="300">  
+
+* And you will be able to see your project in the global depot page where you can see other projects from other users and add a like to them.
+
+<img src="C:\Users\elect\OneDrive\Desktop\Project Builder Folder\Project-Builder\Screenshots\Screenshot8.jpg" alt="FinalMessage" width="300">  
 
 
 [Return to Table of Contents](#Table-of-Contents)
@@ -90,16 +98,22 @@ ___
 
 1. Clone this repository
     ```
-    git clone https://github.com/Purposefully/MemoryGame.git
+    https://github.com/GalacticKnight/Project-Builder.git
     ```
 2. Move into the repository
     ```
-    cd MemoryGame
+    cd Project-Builder
     ```
-3. Run the index.html file
+3. Run these commands ONE at a time
     ```
-    index.html
+    pipenv install flask
+    pipenv shell
+    pipenv install flask-bcrypt
+    pipenv install PyMySQL flask
     ```
-
+4. Run this command
+    ```
+    python server.py
+    ```
 
 [Return to Table of Contents](#Table-of-Contents)
