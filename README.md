@@ -25,7 +25,7 @@ ___
 ___
 
 ## Background
-I thought it would be fun to use my coding skills to create a unique birthday "card" for a friend.
+It was a solo project that I wanted to create to practice my knowledge in Python/Flask/MySQL Development.
 
 [Return to Table of Contents](#Table-of-Contents)
 
@@ -57,7 +57,9 @@ ___
 ## Technologies Used
 * HTML
 * CSS
-* JavaScript
+* Python
+* Flask
+* MySQL
 
 
 
