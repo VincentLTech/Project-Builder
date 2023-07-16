@@ -20,7 +20,7 @@ It was a solo project that I wanted to create to practice my knowledge in Python
 ___
 
 ## Features
-* Guide to how the websit works
+* Guide to how the website works
 
 * Try Registering for your account for the first time. Or Login if you have already registered
 
